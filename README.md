@@ -54,7 +54,7 @@ The Wireshark dissector for the custom protocol used by the Ubisense UWB RTLS ha
 Please refer to the same installation instructions written in the Sewio UWB RTLS section.
 
 ## Features
-The dissector interprets the packets with message code ```0x026B``` (D4 Tag Location), that is the message code that is used by the sensors to communicate the position of a tag to the server. More details regarding the packet dissection are available in the [labs blog of the Nozomi Networks](https://www.nozominetworks.com/labs/labs-blogs/) website. Notably, differently than the Sewio and Avalue UWB RTLS, in the Ubisense UWB RTLS the network packets contain the X, Y, and Z coordinates of the tag, because the different network architecture allows anchors to be kept in sync and immediately communicate the final position to the server.
+The dissector interprets the packets with message code ```0x026B``` (D4 Tag Location), that is the message code that is used by the sensors to communicate the position of a tag to the server. More details regarding the packet dissection are available in the [labs blog of the Nozomi Networks](https://www.nozominetworks.com/blog/uwb-rtls-vulnerability-confirmed-in-ubisense-dimension4-3d-tracking-system/) website. Notably, differently than the Sewio and Avalue UWB RTLS, in the Ubisense UWB RTLS the network packets contain the X, Y, and Z coordinates of the tag, because the different network architecture allows anchors to be kept in sync and immediately communicate the final position to the server.
 
 You may test the dissector with the provided PCAP file, captured during an execution of the RTLS while moving UWB tags in the monitored room. 
 
